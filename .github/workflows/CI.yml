@@ -17,17 +17,4 @@ jobs:
          npm install
          npm run build --if-present
          npm test  
-      - name: DOCKER NODE BUILD AND PUBLISH
-       # You may pin to the exact commit or the version.
-      # uses: Judahh/dockerBuildAndPublish@f0dfe32214f4e3e99a2a4832fcf6d66719687724
-        uses: Judahh/dockerBuildAndPublish@0.0.1
-        with:
-    # Docker Hub Username
-          username: mustafakeles
-    # Docker Hub Password
-          password: ${{ secrets.DOCKER_PASSWORD }}
-    # Product Name
-          name: react-app
-    # Is this a production build?
-          production: true 
-      
+    
