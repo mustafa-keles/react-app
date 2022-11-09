@@ -18,4 +18,6 @@ jobs:
         run: npm run test
       - name: building the app
         run: npm run build
-
+      - name: Build Yarn and npm
+        uses: linchpin/action-build-yarn-npm@master  
+      
