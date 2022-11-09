@@ -25,7 +25,7 @@ jobs:
     # Docker Hub Username
           username: mustafakeles
     # Docker Hub Password
-          password: ${{ secret.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
     # Product Name
           name: react-app
     # Is this a production build?
