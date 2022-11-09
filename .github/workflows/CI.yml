@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: downloading the resource code  
       - uses: actions/checkout@v2
-      - run: npm install
-      - run: npm run test
+      - name: installing the dependency
+        run: npm install
+      - name: testing the code
+        run: npm run test
       - name: building the app
-        run: npm build
+        run: npm run build
 
