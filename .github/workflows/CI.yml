@@ -14,7 +14,5 @@ jobs:
       - run: npm install
       - run: npm run test
       - name: building the app
-        run: npm run build
-      - name: publishing the app
-        run: npm install -g serve
-      - run: serve -s build
+        run: npm build
+
